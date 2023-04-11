@@ -8,7 +8,6 @@ const mongoConnect = callback => {
     "mongodb+srv://sanathZem1515:sanathZem%401515@cluster0.au7arks.mongodb.net/shop?retryWrites=true&w=majority"
   )
     .then((client) => {
-      console.log("Connected!");
       _db = client.db();
       callback();
     })
